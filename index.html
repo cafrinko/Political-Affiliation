@@ -11,28 +11,35 @@
     <div class="jumbotron">
       <h3>Test your political loyalty!</h3>
     </div>
-    <form id="Survey">
+
+<!--Comm or Ind Survey Question-->
+    <form id="surveyQ1">
       <div class="form-group">
         <label for="commind">Are you more community or individually-minded?</label>
         <select id="commind">
-          <option value="Community">Community</option>
-          <option value="Individual">Individual</option>
+          <option value="individual">Individual</option>
+          <option value="community">Community</option>
         </select>
       </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+<!--Comm or Ind Survey Question-->
+
+<!--Some of No Gov't Ctrl Survey Question-->
+    <form id="surveyQ2">
       <div class="form-group">
-        <label for="party">do you like the color blue or red?</label>
-        <select id="party">
-          <option value="blue">blue</option>
-          <option value="red">red</option>
+        <label for="control">Would you prefer some or no government control?</label>
+        <select id="control">
+          <option value="some-control">Some control</option>
+          <option value="no-control">No control</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="party">would you prefer some or no government control?</label>
-        <select id="party">
-          <option value="some">some</option>
-          <option value="none">none</option>
-        </select>
-      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+<!--Some of No Gov't Ctrl Survey Question-->
+
+<!--Rev or Ref Survey Question-->
+    <form id="surveyQ3">
       <div class="form-group">
         <label for="radical">Would you prefer revolution or reform?</label>
         <select id="radical">
@@ -40,11 +47,27 @@
           <option value="reform">reform</option>
         </select>
       </div>
-      <button type="submit" class="btn">Calculate my quote</button>
-      </form>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+<!--Rev or Ref Survey Question-->
+
+    <div class="result">
+      <div class="result-radical">
+        <h3>Congratulations you are radical!</h3>
+      </div>
+      <div class="result-liberal">
+        <h3>Congratulations you are liberal!</h3>
+      </div>
+      <div class="result-moderate">
+        <h3>Congratulations you are moderate!</h3>
+      </div>
+      <div class="result-conservative">
+        <h3>Congratulations you are conservative!</h3>
+      </div>
+    </div>
     </div>
 </body>
-<script src="js/jquery-1.12.2.js"></script>
+<script src="js/jquery-1.12.0.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
 </html>
