@@ -11,13 +11,38 @@
     <div class="jumbotron">
       <h3>Test your political loyalty!</h3>
     </div>
-        <p></p>
-    <div class="">
-
+    <form id="Survey">
+      <div class="form-group">
+        <label for="commind">Are you more community or individually-minded?</label>
+        <select id="commind">
+          <option value="Community">Community</option>
+          <option value="Individual">Individual</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="party">do you like the color blue or red?</label>
+        <select id="party">
+          <option value="blue">blue</option>
+          <option value="red">red</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="party">would you prefer some or no government control?</label>
+        <select id="party">
+          <option value="some">some</option>
+          <option value="none">none</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="radical">Would you prefer revolution or reform?</label>
+        <select id="radical">
+          <option value="revolution">revolution</option>
+          <option value="reform">reform</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Calculate my quote</button>
+      </form>
     </div>
-
-
-  </div>
 </body>
 <script src="js/jquery-1.12.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
